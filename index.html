@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seznamy a tabulky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Seznamy a tabulky</h1>
+    <h2>Tvorba seznamů</h2>
+    <h3>Uspořádaný seznam</h3>
+<ol>
+     <li>Google Chrome</li>
+     <li>Internet explorer</li>
+     <li>Mozilla Firefox</li>
+</ol>
+
+<h3>Nauspořádaný seznam</h3>
+<ul>
+    <li>IP adresy (např. IPv4: 192.168.23.1, IPv6: 2001:0000:130F:0000:0000:09C0:876A:130B)</li>
+    <li>DNS adresy (např.strojka.opava.cz)</li>
+    <li>URL adresy (např. http://moodle.sspu-opava.cz:81/course/view.php?id=95)</li>
+</ul>
+<h3>Vnořený seznam</h3>
+<ul>
+    <li>Hardware
+        <ol>
+            <li>Základní jednotka
+                <ol>
+                    <li>procesor (CPU)</li>
+                    <li>paměť (RAM)</li>
+                    <li>pevný disk (HDD)</li>
+                </ol>
+            </li>
+            <li>Vstupní zařízení
+                <ol>
+                    <li>klávesnice</li>
+                    <li>myš</li>
+                </ol>
+            </li>
+            <li>Výstupní zařízení
+                <ol>
+                    <li>monitor</li>
+                    <li>tiskárna</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>Software
+        <ol>
+            <li>Základní programové vybavení
+                <ol>
+                    <li>OS</li>
+                    <li>ovladač</li>
+                    <li>firmware</li>
+                </ol>
+            </li>
+            <li>Aplikace
+                <ol>
+                    <li>textový editor</li>
+                    <li>prohlížeč</li>
+                    <li>antivirový program</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+</ul>
+<h3>Popisný seznam</h3>
+<dl>
+    <dt>Internet Society</dt>
+    <dd>Mezinárodní organizace pro globální koordinaci a kooperaci v rámci internetu.</dd>
+    <dt>World Wide Web Consortium</dt>
+    <dd>Mezinárodní konsorcium, jehož členové společné s veřejností vyvíjejí webové standarty pro službu WWW.</dd>
+    <dt>Internet Assigned Numbers Authority</dt>
+    <dd>Organizace, která dohlíží celosvětově na přidělování IP adres, správu kořenových zón DNS, definování typů pro MIME a další náležitosti internetovách protokolů.</dd>
+</dl>
+<h2>Tvorba tabulek</h2>
+<p>Komplexní tabulka v HTML může být tvořena záhlavím, tělem a zápatím. Pomocí atributů colspan a rowspan můžeme vytvořit sloučené buňky, které přesahují přes více sloupců i řádků.</p>
+<table>
+    <caption>Studijní obory na SŠPU Opava- šk. rok 2023/2024</caption>
+<thead>
+
+<tr>
+    <th rowspan="2">Název oboru</th>
+    <th rowspan="2">Kód oboru</th>
+    <th rowspan="2">Počet tříd</th>
+    <th colspan="3">Počet žáků</th>
+</tr>
+<tr>
+    <th>Chlapci</th>
+    <th>Dívky</th>
+    <th>Celkem</th>
+</tr>
+<tr>
+    <th>Informační technologie</th>
+    <th>18-20-M/01</th>
+    <th>4</th>
+    <th>116</th>
+    <th>10</th>
+    <th>126</th>
+</tr>
+
+<tr>
+    <th>Strojírenství</th>
+    <th>23-41-M/01</th>
+    <th>8</th>
+    <th>134</th>
+    <th>0</th>
+    <th>134</th>
+
+</tr>
+<tr>
+<th>Umělecké obory</th>
+<th>82-41-M/04, 82-41-M/05, 82-41-M/08</th>
+<th>4</th>
+<th>13</th>
+<th>82</th>
+<th>95</th>
+</tr>
+<tr>
+    <th colspan="2"><b>Celkové údaje</b></th>
+    <th>16</th>
+    <th colspan="3">355</th>
+</tr>
+</thead>
+</table>
+</body>
+</html>
